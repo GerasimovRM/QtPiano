@@ -1,4 +1,4 @@
-from less_dop_1.task_2.piano_ui import Ui_Form
+from piano_ui import Ui_Form
 from PyQt5 import QtCore, QtMultimedia, QtGui
 from PyQt5.QtWidgets import QApplication, QMainWindow
 import os
@@ -126,7 +126,6 @@ class MyWidget(QMainWindow, Ui_Form):
         elif event.key() == Qt.Key_6:
             self.players[11].stop()
             self.players[11].play()
-
 
 
 def except_hook(cls, exception, traceback):
